@@ -1,4 +1,4 @@
-# Capabilities 2021
+# Capabilities
 
 This chapter discusses new web platform APIs that unlock entirely new use cases on the web. These APIs are also referred to as capabilities. Last year's chapter presented several new web platform APIs together with their usage statistics primarily based on telemetry data collected by Blink. This year's chapter discusses the most important capabilities for productivity applications. These kind of applications tightly integrate with a file-based workflow: Users double-click a file, edit it and save it back to the file system. Apps like Visual Studio Code, Adobe Photoshop or Microsoft Excel heavily rely on this workflow. By accessing the clipboard, those apps can exchange data with other applications on the system.
 
@@ -100,6 +100,8 @@ The list of local fonts is problematic from a privacy point of view, as it may r
 
 The Async Clipboard API allows you to read and write data from or to the clipboard. Due to its asynchronous nature, it enables use cases like converting image data while pasting without blocking the UI.
 
+With 8.91 % (desktop) and 8.25 % (mobile) sites, the Async Clipboard API is the second-most used Fugu API …
+
 ```js
 await navigator.clipboard.write([new ClipboardItem('hello world')]);
 await navigator.clipboard.writeText('hello world');
@@ -122,7 +124,11 @@ TODO
 
 ## Sites using most capabilities
 
-These are the sites that use the most capabilities:
+These are the sites that use the most Fugu capabilities:
+
+1. The site using the most APIs (28) on both desktop and mobile is whatwebcando.today, an overview website that demonstrates the ability of the modern web.
+2. The Polis Notis app shows crimes in Sweden. (which?)
+3. Eight sites use 8 Fugu APIs. One of them is Excalidraw, an online image editor.
 
 ## Conclusion
 
