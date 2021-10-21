@@ -195,6 +195,8 @@ In the analysis, the websites from the HTTP Archive data set using the most capa
 The results also include sites that aren’t pro-actively using the APIs. For example, some sites ship library code that could theoretically access the capabilities. Some sites check for the presence of Fugu APIs to determine the user’s browser.
 
 ## Conclusion
-Capabilities help move the web forward by unlocking more and more use cases for developers. As this chapter shows, developers use the new web platform APIs to build powerful applications. In contrast to their native counter parts, those applications don’t need to be installed to the system and don’t require any additional third-party runtimes or plug-ins to work. They run on any platform that can run a powerful browser. This makes writing applications much easier and more efficient for developers.
+Capabilities help move the web forward by unlocking more and more use cases for developers. As this chapter shows, developers use the new web platform APIs to build powerful applications. In contrast to their native counter parts, those applications don’t need to be installed to the system and don’t require any additional third-party runtimes or plug-ins to work. They run on any platform that can run a powerful browser. This IDE was already written with native web technology,  This makes writing applications much easier and more efficient for developers.
+
+One example of this concept working is the Visual Studio Code IDE. This application has always been web-based, but until now it still relied on native application wrappers like Electron. Thanks to capabilities like the File System Access API, Microsoft was able to release the application as a browser application ([vscode.dev](https://vscode.dev)) in October 2021. Almost all features of the IDE work here—with the exception of access to the terminal, since there is no capability for this yet.
 
 #article/almanac/2021
